@@ -1,0 +1,9 @@
+:host {
+    display: flex; 
+    flex-direction: column; // To achieve the footer, header, nav bar look. 
+    position: absolute; // To make the flexbox widescreen
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
