@@ -1,6 +1,18 @@
-<div class="title-bar"> <!--necessary to make it responsive-->
+
+<!--layout for small screens-->
+<div *screenBelowLarge class="title-bar-small">
+    <span class="glyphicon glyphicon-menu-hamburger">=</span>
+    <div class="small-image-holder">
+        <img class="small-image" src="assets/logo.png">
+    </div>
+    <span class="glyphicon glyphicon-option-vertical">...</span>
+</div>
+<!--layout for large screens-->
+<div *screenLarge class="title-bar user-title-bar"><!--necessary to make it responsive-->
     <img src="../../assets/logo.png" alt="Green Nations Logo">
     <div class="menu-area">
+        <fw-top-bar></fw-top-bar>
         <!--menu-->
     </div>
+    <button class=""></button>
 </div>

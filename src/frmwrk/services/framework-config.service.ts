@@ -8,7 +8,7 @@ import { IconFiles } from '../interfaces/IconFiles';
 export class FrameworkConfigService {
 
   showLanguageSelector = true;
-  showUserConstrols = true;
+  showUserControls = true;
   showStatusBar = true;
   showsStatusBarBreakpoint = 0;
   socialIcons = new Array<IconFiles>();
