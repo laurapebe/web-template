@@ -1,0 +1,39 @@
+:host {
+    display: inline-block;
+    position: relative; // relative for when we display pop-up menu items
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 15px;
+    color: #666;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+// If parent is not a pop-up (or submenu).
+:host:not(.parent-is-popup){
+    margin-left: 16ox;
+    width: auto;
+}
+
+span {
+    pointer-events: none;
+}
+
+.glyphicon {
+    top: 1px;
+    font-size: 14px;
+    margin-right: 4px;
+    margin-left: 8px;
+}
+
+.menu-item {
+    padding: 10px 10px 10px 0;
+}
+
+.menu-item:hover {
+    background-color: #dfdfdf;
+}

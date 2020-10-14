@@ -9,6 +9,10 @@ import { FrameworkConfigService } from './services/framework-config.service';
 import { ScreenService } from './services/screen.service';
 import { ScreenBelowLarge } from './directives/screen-below-large.directive';
 import { ScreenLarge } from './directives/screen-large.directive';
+import { MenuService } from './services/menu.service';
+import { MenuComponent } from 'src/app/src/frmwrk/menus/menu/menu.component';
+import { MenuItemComponent } from './menus/menu-item/menu-item.component';
+import { MenusModule } from './menus/menus.module';
 
 
 
@@ -20,13 +24,14 @@ import { ScreenLarge } from './directives/screen-large.directive';
     TopBarComponent,
     StatusBarComponent,
     ScreenBelowLarge,
-    ScreenLarge
+    ScreenLarge,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MenusModule
   ],
   exports: [
-    FrameworkBodyComponent // Only export the framework body component 
+    FrameworkBodyComponent ,// Only export the framework body component 
   ],
   providers : [
     FrameworkConfigService,
